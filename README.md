@@ -76,8 +76,9 @@ pip install -r requirements.txt
 # Run the Flask app
 python app.py
 
+---
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 Add dynamic hyperparameter tuning (GridSearchCV support)
 
 Support for uploading custom datasets
@@ -86,17 +87,23 @@ Visualizations for feature importance
 
 User login for tracking training history
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 Feel free to open issues or submit pull requests. Feedback is always welcome!
 
-🙌 Acknowledgments
+---
+
+## 🙌 Acknowledgments
 UCI for the Mushroom dataset
 
 The open-source Python & Flask community
 
 Scikit-learn for making ML so accessible
 
-📬 Connect
+---
+
+## 📬 Connect
 Made with ❤️ by Ahmad Yasin
 🔗 LinkedIn www.linkedin.com/in/mian-ahmad-yasin | 🌐 https://ahmadyasin.vercel.app/
 
