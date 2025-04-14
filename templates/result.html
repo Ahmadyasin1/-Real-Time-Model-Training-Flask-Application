@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center">Results for {{ algorithm }}</h1>
+    <p class="text-center">Accuracy: {{ accuracy }}%</p>
+    <h2 class="text-center">Confusion Matrix</h2>
+    <div class="text-center">
+        <img src="data:image/png;base64,{{ cm_image }}" alt="Confusion Matrix">
+    </div>
+    <h2 class="text-center mt-4">Classification Report</h2>
+    <pre>{{ classification_report }}</pre>
+    <div class="text-center mt-4">
+        <a href="{{ url_for('index') }}" class="btn btn-primary">Go Back</a>
+    </div>
+</div>
+</body>
+</html>

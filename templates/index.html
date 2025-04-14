@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Learning Algorithms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        .form-group {
+            margin-top: 20px;
+        }
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center">Select Machine Learning Algorithm</h1>
+    <form action="{{ url_for('result') }}" method="post">
+        <div class="form-group">
+            <label for="algorithm">Choose an algorithm:</label>
+            <select id="algorithm" name="algorithm" class="form-control">
+                <option value="Logistic Regression">Logistic Regression</option>
+                <option value="Random Forest">Random Forest</option>
+                <option value="Decision Tree">Decision Tree</option>
+                <option value="KNN">K-Nearest Neighbors (KNN)</option>
+                <option value="SVM">Support Vector Machine (SVM)</option>
+                <option value="Naive Bayes">Naive Bayes</option>
+                <option value="Linear Regression">Linear Regression</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<footer>
+    <p>&copy; 2024 PFAI_Theory Project. Ahmad Yasin, Abdul Rehman.</p>
+</footer>
+</body>
+</html>

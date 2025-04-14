@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Learning Project Presentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ece9e6, #ffffff);
+            overflow: hidden;
+            animation: bgAnimation 10s infinite;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            animation: fadeIn 2s;
+            max-width: 800px;
+            margin: 20px;
+        }
+        .member {
+            margin: 20px;
+            transition: transform 0.3s;
+            animation: slideIn 1s forwards;
+            opacity: 0;
+        }
+        .member:hover {
+            transform: scale(1.05);
+        }
+        .member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .member h3 {
+            margin-top: 10px;
+        }
+        .member p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .btn-primary {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes bgAnimation {
+            0% {background: linear-gradient(135deg, #83dfec, #0ec2dc);}
+            50% {background: linear-gradient(135deg, #d4fc79, #96e6a1);}
+            100% {background: linear-gradient(135deg, #dabc9f, #f45a5a);}
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(200px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .member:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+        .member:nth-child(2) {
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Our Machine Learning Project</h1>
+    <p class="lead">Presented by Ahmad Yasin and Abdul Rehman</p>
+    <div class="row justify-content-center">
+        <div class="col-md-5 member">
+            <img src="static/AhmadYasin.jpg" alt="Ahmad Yasin">
+            <h3>Ahmad Yasin</h3>
+            <p>Machine Learning Enthusiast<br>Ahmad is passionate about leveraging machine learning to solve real-world problems. He has a strong background in data analysis and predictive modeling.</p>
+        </div>
+        <div class="col-md-5 member">
+            <img src="static/happy_monkey.jpg" alt="Abdul Rehman">
+            <h3>Abdul Rehman</h3>
+            <p>Data Scientist<br>Abdul specializes in data science and has extensive experience in building and deploying machine learning models. He enjoys turning data into actionable insights.</p>
+        </div>
+    </div>
+    <a href="/index" class="btn btn-primary">Proceed to Algorithm Selection</a>
+</div>
+</body>
+</html>
