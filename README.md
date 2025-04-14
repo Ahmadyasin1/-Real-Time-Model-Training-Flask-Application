@@ -60,25 +60,8 @@ You can explore the application live:
 
 ---
 
-## 📦 Installation (For Local Use)
-
-```bash
-git clone https://github.com/your-username/real-time-ml-training-app.git
-cd real-time-ml-training-app
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Flask app
-python app.py
-
----
-
 ## 🔮 Future Enhancements
+
 Add dynamic hyperparameter tuning (GridSearchCV support)
 
 Support for uploading custom datasets
@@ -107,4 +90,20 @@ Scikit-learn for making ML so accessible
 Made with ❤️ by Ahmad Yasin
 🔗 LinkedIn www.linkedin.com/in/mian-ahmad-yasin | 🌐 https://ahmadyasin.vercel.app/
 
+---
 
+### 📦 Installation (For Local Use)
+
+```bash
+git clone https://github.com/your-username/real-time-ml-training-app.git
+cd real-time-ml-training-app
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Flask app
+python app.py
